@@ -1,20 +1,31 @@
+import Header from "./components/layout/Header";
+
 function App() {
   return (
-    <main>
-      <h1>Amharic Typeface</h1>
+    <div className="app">
+      <Header />
 
-      <p>Design your own Ethiopic typeface.</p>
+      <main className="app-main">
+        <section className="hero">
+          <span className="eyebrow">ETHIOPIC TYPE DESIGN</span>
 
-      <div>
-        <span>ሀ</span>
-        <span>ሁ</span>
-        <span>ሂ</span>
-        <span>ሃ</span>
-        <span>ሄ</span>
-        <span>ህ</span>
-        <span>ሆ</span>
-      </div>
-    </main>
+          <h1>
+            Create your own
+            <br />
+            <span>Amharic typeface.</span>
+          </h1>
+
+          <p>
+            Design one character and explore how your style can evolve
+            throughout its family.
+          </p>
+
+          <button className="primary-button">
+            Start designing
+          </button>
+        </section>
+      </main>
+    </div>
   );
 }
 
